@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Environments
+.venv/
+venv/
+
+# Third-party papers kept locally only (publisher copyright — do not publish)
+first-demo/papers/
+
+# Claude local settings (machine-specific)
+.claude/settings.local.json

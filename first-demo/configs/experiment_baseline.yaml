@@ -1,0 +1,39 @@
+# Baseline circuit experiment: no energy awareness (control group).
+# Runs three wind cases and compares Wh/km.
+experiment_name: baseline
+aircraft: configs/default_aircraft.yaml
+
+seed: 12345
+
+# Simulation
+dt: 0.1            # s, RK4 step
+t_max: 400.0       # s, hard cap per case (a lap is ~300 s at 10 m/s)
+laps: 1            # number of full circuits to fly per case
+
+# Rectangular circuit
+circuit:
+  length: 1000.0   # m, along +x (East)
+  width: 500.0     # m, along +y (North)
+  altitude: 100.0  # m
+  airspeed: 10.0   # m/s commanded airspeed
+
+# Controller gains
+controller:
+  k_heading: 1.0        # proportional heading gain (rad output per rad error)
+  waypoint_radius: 30.0 # m, capture radius to advance to next waypoint
+  max_bank_deg: 30.0    # bank angle limit
+
+# Airspeed tracking (first-order)
+airspeed_tau: 2.0  # s, time constant for commanded->actual airspeed
+
+# Wind cases. direction_deg is the FROM direction in compass-like degrees
+# mapped to our frame at plotting/IO boundary; see wind.py for convention.
+cases:
+  - name: still_air
+    wind: {kind: uniform, speed: 0.0, direction_deg: 0.0, gust_std: 0.0}
+  - name: headwind_leg
+    # 5 m/s wind blowing toward -x, so the +x (outbound long) leg is into wind.
+    wind: {kind: uniform, speed: 5.0, direction_deg: 180.0, gust_std: 0.0}
+  - name: tailwind_leg
+    # 5 m/s wind blowing toward +x, so the +x (outbound long) leg is with wind.
+    wind: {kind: uniform, speed: 5.0, direction_deg: 0.0, gust_std: 0.0}

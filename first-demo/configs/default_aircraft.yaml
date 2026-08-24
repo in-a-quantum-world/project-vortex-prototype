@@ -1,0 +1,14 @@
+# Point-mass fixed-wing UAV parameters (SI units).
+mass: 2.5          # kg
+S: 0.5             # wing reference area, m^2
+AR: 8.0            # aspect ratio
+CD0: 0.03          # zero-lift drag coefficient
+e: 0.85            # Oswald efficiency factor
+rho: 1.225         # air density, kg/m^3
+eta_prop: 0.70     # propeller efficiency
+eta_motor: 0.85    # motor + ESC efficiency
+battery_Wh: 50.0   # usable battery capacity, Wh
+V_stall: 8.0       # stall airspeed, m/s (implies CL_max ~= 1.25)
+Va_max: 18.0       # never-exceed / max commandable airspeed, m/s
+# Induced drag factor derived internally: k = 1 / (pi * e * AR)
+# Speed-to-fly lower bound uses a stall margin: 1.1 * V_stall (see controller).

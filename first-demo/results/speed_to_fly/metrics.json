@@ -1,0 +1,86 @@
+{
+  "source_concept": "MacCready speed-to-fly, zero-lift case",
+  "sweep": {
+    "0": {
+      "baseline_whkm_max": 0.8601,
+      "baseline_whkm_mean": 0.85987,
+      "baseline_whkm_min": 0.8597,
+      "saving_pct": 0.0,
+      "stf_whkm_max": 0.8601,
+      "stf_whkm_mean": 0.85987,
+      "stf_whkm_min": 0.8597
+    },
+    "1": {
+      "baseline_whkm_max": 0.8671,
+      "baseline_whkm_mean": 0.86697,
+      "baseline_whkm_min": 0.8668,
+      "saving_pct": 0.081,
+      "stf_whkm_max": 0.8663,
+      "stf_whkm_mean": 0.86627,
+      "stf_whkm_min": 0.8662
+    },
+    "2": {
+      "baseline_whkm_max": 0.8893,
+      "baseline_whkm_mean": 0.8892,
+      "baseline_whkm_min": 0.8891,
+      "saving_pct": 0.382,
+      "stf_whkm_max": 0.8859,
+      "stf_whkm_mean": 0.8858,
+      "stf_whkm_min": 0.8856
+    },
+    "3": {
+      "baseline_whkm_max": 0.9298,
+      "baseline_whkm_mean": 0.9294,
+      "baseline_whkm_min": 0.929,
+      "saving_pct": 1.037,
+      "stf_whkm_max": 0.9199,
+      "stf_whkm_mean": 0.91977,
+      "stf_whkm_min": 0.9196
+    },
+    "4": {
+      "baseline_whkm_max": 0.9936,
+      "baseline_whkm_mean": 0.99333,
+      "baseline_whkm_min": 0.9931,
+      "saving_pct": 2.319,
+      "stf_whkm_max": 0.9706,
+      "stf_whkm_mean": 0.9703,
+      "stf_whkm_min": 0.9701
+    },
+    "5": {
+      "baseline_whkm_max": 1.0922,
+      "baseline_whkm_mean": 1.09207,
+      "baseline_whkm_min": 1.0918,
+      "saving_pct": 4.722,
+      "stf_whkm_max": 1.0409,
+      "stf_whkm_mean": 1.0405,
+      "stf_whkm_min": 1.0402
+    },
+    "6": {
+      "baseline_whkm_max": 1.2489,
+      "baseline_whkm_mean": 1.24847,
+      "baseline_whkm_min": 1.2482,
+      "saving_pct": 9.07,
+      "stf_whkm_max": 1.1356,
+      "stf_whkm_mean": 1.13523,
+      "stf_whkm_min": 1.1349
+    },
+    "7": {
+      "baseline_whkm_max": 1.5143,
+      "baseline_whkm_mean": 1.51397,
+      "baseline_whkm_min": 1.5136,
+      "saving_pct": 16.641,
+      "stf_whkm_max": 1.2623,
+      "stf_whkm_mean": 1.26203,
+      "stf_whkm_min": 1.2616
+    },
+    "8": {
+      "baseline_whkm_max": 2.0425,
+      "baseline_whkm_mean": 2.0404,
+      "baseline_whkm_min": 2.0387,
+      "saving_pct": 29.494,
+      "stf_whkm_max": 1.4396,
+      "stf_whkm_mean": 1.4386,
+      "stf_whkm_min": 1.438
+    }
+  }
+}

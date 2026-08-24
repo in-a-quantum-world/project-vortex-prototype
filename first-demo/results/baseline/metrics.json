@@ -1,0 +1,35 @@
+{
+  "headwind_leg": {
+    "battery_Wh_remaining": 46.8099,
+    "completed_circuit": true,
+    "duration_s": 370.6,
+    "energy_Wh": 3.1901,
+    "ground_distance_m": 2916.65,
+    "max_crosstrack_on_leg_m": 17.5734,
+    "mean_power_W": 30.989,
+    "wh_per_km": 1.0938,
+    "wh_per_km_aligned_leg": 1.7163
+  },
+  "still_air": {
+    "battery_Wh_remaining": 47.4862,
+    "completed_circuit": true,
+    "duration_s": 292.1,
+    "energy_Wh": 2.5138,
+    "ground_distance_m": 2920.99,
+    "max_crosstrack_on_leg_m": 0.3864,
+    "mean_power_W": 30.981,
+    "wh_per_km": 0.8606,
+    "wh_per_km_aligned_leg": 0.8581
+  },
+  "tailwind_leg": {
+    "battery_Wh_remaining": 46.7743,
+    "completed_circuit": true,
+    "duration_s": 375.2,
+    "energy_Wh": 3.2257,
+    "ground_distance_m": 2950.95,
+    "max_crosstrack_on_leg_m": 17.6127,
+    "mean_power_W": 30.95,
+    "wh_per_km": 1.0931,
+    "wh_per_km_aligned_leg": 0.5721
+  }
+}

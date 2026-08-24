@@ -1,0 +1,32 @@
+# Speed-to-fly experiment: baseline (fixed airspeed) vs energy-aware airspeed
+# scheduling, swept over wind speed. Source concept: MacCready speed-to-fly,
+# zero-lift case (SPEC §6).
+experiment_name: speed_to_fly
+mode: speed_to_fly_sweep
+aircraft: configs/default_aircraft.yaml
+
+# Simulation
+dt: 0.1
+t_max: 1000.0       # generous cap; strong headwind legs are slow
+laps: 1
+
+# Rectangular circuit (long legs along +/-x, i.e. aligned with the wind sweep)
+circuit:
+  length: 1000.0
+  width: 500.0
+  altitude: 100.0
+  airspeed: 10.0    # baseline fixed commanded airspeed (== still-air optimum)
+
+controller:
+  k_heading: 1.0
+  waypoint_radius: 30.0
+  max_bank_deg: 30.0
+
+airspeed_tau: 2.0
+
+# Sweep: wind along the long legs, 0..8 m/s in 1 m/s steps.
+wind_speeds: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+wind_direction_deg: 0.0   # blows toward +x (one long leg tail, the other head)
+gust_std: 0.8             # seeded Gaussian gusts -> seed spread
+seeds: [11, 22, 33]
+highlight_wind: 5.0       # wind speed used for the commanded-airspeed timeline
