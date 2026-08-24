@@ -2,7 +2,7 @@
 
 Background reading for the atmospheric-energy models in `SPEC.md`.
 
-The PDFs live in `first-demo/papers/` locally but are **not** committed — they
+The PDFs are available locally but are **not** committed since they
 are publisher-copyright works. Retrieve them from the sources below.
 
 | Local file | Source |
